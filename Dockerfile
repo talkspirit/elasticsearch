@@ -1,4 +1,4 @@
-FROM elasticsearch:1.4.5
+FROM elasticsearch:1.7.2
 
 # Print "Customization Elasticsearh for talkSpirit"
 
@@ -8,7 +8,6 @@ RUN /usr/share/elasticsearch/bin/plugin -install mobz/elasticsearch-head
 RUN /usr/share/elasticsearch/bin/plugin -install karmi/elasticsearch-paramedic
 RUN /usr/share/elasticsearch/bin/plugin -install polyfractal/elasticsearch-segmentspy
 RUN /usr/share/elasticsearch/bin/plugin -install polyfractal/elasticsearch-inquisitor
-RUN /usr/share/elasticsearch/bin/plugin -install elasticsearch/elasticsearch-mapper-attachments/2.4.1
+RUN /usr/share/elasticsearch/bin/plugin -install elasticsearch/elasticsearch-mapper-attachments/2.7.1
 RUN /usr/share/elasticsearch/bin/plugin -install lukas-vlcek/bigdesk
 RUN /usr/share/elasticsearch/bin/plugin -install lmenezes/elasticsearch-kopf
-
